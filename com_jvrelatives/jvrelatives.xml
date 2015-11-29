@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="component" method="upgrade">
+    <name>COM_JVRELATIVES</name>
+    <creationDate>02-Mar-2015</creationDate>
+    <author>JV-Extensions</author>
+    <authorEmail>support@jv-extensions.com</authorEmail>
+    <authorUrl>http://www.jv-extensions.com</authorUrl>
+    <copyright>Copyright 2008-2015 JV-Extensions. All rights reserved</copyright>
+    <license>GNU General Public License version 3; see LICENSE.txt</license>
+    <description>Advanced Related Items, Keyword Tagging and Social media bookmarking extension for Joomla 3.x Core Articles</description>
+    <version>5.4</version>
+    <scriptfile>script.php</scriptfile>
+
+    <files folder="components/com_jvrelatives">
+    	<folder>helpers</folder>
+    	<folder>temp</folder>
+        <filename>index.html</filename>
+        <filename>LICENSE.txt</filename>
+    </files>
+
+    <languages folder="language/en-GB">
+    	<language tag="en-GB">en-GB.com_jvrelatives.ini</language>
+	</languages>
+
+    <media destination="com_jvrelatives" folder="media/com_jvrelatives">
+        <folder>assets</folder>
+        <folder>temp</folder>
+        <folder>styles</folder>
+		<filename>index.html</filename>
+    </media>
+
+    <administration>
+    	<menu view="jvld">COM_JVRELATIVES_MENU</menu>
+        <files folder="administrator/components/com_jvrelatives">
+            <folder>assets</folder>
+            <folder>cache</folder>
+            <folder>common</folder>
+            <folder>controllers</folder>
+            <folder>extensions</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>setup</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>jvrelatives.php</filename>
+        </files>
+        <languages folder="administrator/language/en-GB">
+            <language tag="en-GB">en-GB.com_jvrelatives.ini</language>
+            <language tag="en-GB">en-GB.com_jvrelatives.sys.ini</language>
+        </languages>
+	</administration>
+
+    <modules>
+		<module module="mod_jvrelatives_content" client="site" />
+	</modules>
+
+	<plugins>
+		<plugin plugin="jvrelatives_content" group="content" />
+		<plugin plugin="jvreleopsob" group="system" />
+	</plugins>
+
+</extension>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: config.xml 133 2011-07-23 04:06:59Z sniranjan $ -->
+
+<form>
+
+    <fieldset
+        name="display"
+        label="COM_JVRELATIVES_FIELDSET_COMMON"
+        description="COM_JVRELATIVES_FIELDSET_COMMON_DESC">
+
+		<field
+			name="id"
+			type="hidden"
+		/>
+
+		<field
+			name="style"
+			type="jvrelstyle"
+			filter="string"
+			class="inputbox"
+			label="COM_JVRELATIVES_SELECT_STYLE"
+			description="COM_JVRELATIVES_SELECT_STYLE_USAGE"
+			default=""
+		/>
+
+        <field
+            name="new_window"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_NEWWIN"
+            description="">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="sort_criteria"
+            type="list"
+            default="8"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_SORTCRIT"
+            description="">
+                <option value="0">COM_JVRELATIVES_LABEL_DESC5</option>
+                <option value="1">COM_JVRELATIVES_LABEL_DESC6</option>
+                <option value="2">COM_JVRELATIVES_LABEL_DESC7</option>
+                <option value="3">COM_JVRELATIVES_LABEL_DESC8</option>
+                <option value="4">COM_JVRELATIVES_LABEL_DESC9</option>
+                <option value="5">COM_JVRELATIVES_LABEL_DESC10</option>
+                <option value="6">COM_JVRELATIVES_LABEL_DESC11</option>
+                <option value="7">COM_JVRELATIVES_LABEL_DESC12</option>
+                <option value="8">COM_JVRELATIVES_LABEL_DESC13</option>
+                <option value="9">COM_JVRELATIVES_LABEL_DESC39</option>
+        </field>
+
+        <field
+            name="show_intro"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_SHOWINTRO"
+            description="">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="show_title_charcnt"
+            type="text"
+            default="30"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_TITLELEN"
+            description=""
+        />
+
+        <field
+            name="show_intro_charcnt"
+            type="text"
+            default="160"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_INTROLEN"
+            description=""
+        />
+
+        <field
+            name="expand_title_show_intro"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_EXPANDINTRO"
+            description="">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="show_timestamp_info"
+            type="list"
+            default="2"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_SHOWTSTAMP"
+            description="">
+                <option value="0">COM_JVRELATIVES_LABEL_DESC14</option>
+                <option value="1">COM_JVRELATIVES_LABEL_DESC15</option>
+                <option value="2">JHIDE</option>
+        </field>
+
+        <field
+            name="timestamp_format"
+            type="text"
+            default="%a, %d %b %Y, %H:%M:%S"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_TSTAMPFORMAT"
+            description=""
+        />
+
+        <field
+            name="show_hits"
+            type="radio"
+            default="1"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_SHOWHITS"
+            description="">
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+        </field>
+
+        <field
+            name="show_creator"
+            type="radio"
+            default="1"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_SHOWAUTHOR"
+            description="">
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+        </field>
+
+        <field
+            name="link_thumbnail"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_LINKTHUMB"
+            description="">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+        	name="default_thumbnail"
+        	class="inputbox"
+        	type="media"
+			label="COM_JVRELATIVES_LABEL_DISPLAY_DEFTHUMB"
+			description="COM_JVRELATIVES_DESC_DISPLAY_DEFTHUMB"
+		/>
+
+        <field
+            name="no_relatives_text"
+            type="text"
+            default=""
+            label="COM_JVRELATIVES_LABEL_DISPLAY_TEXT4NOART"
+            description=""
+        />
+
+        <field
+            name="no_relatives_text_show"
+            type="radio"
+            class="btn-group"
+            default="1"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_TEXT4NOART_SHOW"
+            description="COM_JVRELATIVES_LABEL_DISPLAY_TEXT4NOART_SHOW_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="no_metakeys_text"
+            type="text"
+            default=""
+            label="COM_JVRELATIVES_LABEL_DISPLAY_TEXT4NOKEYS"
+            description=""
+        />
+
+        <field
+            name="no_metakeys_text_show"
+            type="radio"
+            class="btn-group"
+            default="1"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_TEXT4NOKEYS_SHOW"
+            description="COM_JVRELATIVES_LABEL_DISPLAY_TEXT4NOKEYS_SHOW_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="ignore_keywords"
+            type="text"
+            default=""
+            label="COM_JVRELATIVES_LABEL_SEARCH_KEYSIGNORE"
+            description=""
+        />
+
+        <field
+            name="only_from_author"
+            type="text"
+            default="0"
+            label="COM_JVRELATIVES_LABEL_SEARCH_INCAUTHOR"
+            description="COM_JVRELATIVES_LABEL_SEARCH_INCAUTHOR_DESC"
+        />
+
+        <field
+            name="recent_days"
+            type="text"
+            default="0"
+            label="COM_JVRELATIVES_LABEL_SEARCH_PUBLISHAGE"
+            description="COM_JVRELATIVES_LABEL_SEARCH_PUBLISHAGE_DESC"
+        />
+
+        <field
+            name="exclude_urls"
+            type="text"
+            default=""
+            label="COM_JVRELATIVES_LABEL_COMPONENT_EXCURLS"
+            description="COM_JVRELATIVES_LABEL_COMPONENT_EXCURLS_DESC"
+        />
+
+    </fieldset>
+
+    <fieldset
+        name="tags"
+        label="COM_JVRELATIVES_FIELDSET_TAGS"
+        description="COM_JVRELATIVES_FIELDSET_TAGS_DESC">
+
+        <field
+            name="tag_link_search"
+            type="list"
+            default="0"
+            class="inputbox"
+            label="COM_JVRELATIVES_LABEL_TAGS_LINK"
+            description="">
+                <option value="0">JNO</option>
+                <option value="1">COM_JVRELATIVES_SEARCH_COM_SEARCH</option>
+                <option value="2">COM_JVRELATIVES_SEARCH_COM_FINDER</option>
+        </field>
+
+        <field
+            name="tag_link_search_wintarget"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_DISPLAY_NEWWIN"
+            description="">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+    </fieldset>
+
+    <fieldset
+        name="advanced"
+        label="COM_JVRELATIVES_FIELDSET_ADVANCED"
+        description="COM_JVRELATIVES_FIELDSET_ADVANCED_DESC">
+
+		<field
+            name="load_bootstrap_css"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_CONFIG_LOAD_BOOTSTRAP_CSS"
+            description="COM_JVRELATIVES_CONFIG_LOAD_BOOTSTRAP_CSS_USAGE">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+		<field
+            name="load_bootstrap_js"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_CONFIG_LOAD_BOOTSTRAP_JS"
+            description="COM_JVRELATIVES_CONFIG_LOAD_BOOTSTRAP_JS_USAGE">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="poweredby"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_ADVANCED_POWEREDBY"
+            description="">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="debug"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_ADVANCED_DEBUG"
+            description="">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="cache"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_LABEL_ADVANCED_CACHE"
+            description="">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="cache_lifetime"
+            type="text"
+            default="30"
+            label="COM_JVRELATIVES_LABEL_ADVANCED_CACHE_LIFETIME"
+            description="COM_JVRELATIVES_LABEL_ADVANCED_CACHE_LIFETIME_DESC"
+        />
+
+    </fieldset>
+
+    <fieldset
+        name="socialmedia"
+        label="COM_JVRELATIVES_LABEL_SOCIAL_SETTINGS"
+        description="COM_JVRELATIVES_LABEL_SOCIAL_SETTINGS">
+
+        <field
+        	name="social_code"
+        	type="textarea"
+        	default=""
+        	label="COM_JVRELATIVES_LABEL_SOCIAL_CODE"
+        	description="COM_JVRELATIVES_LABEL_SOCIAL_CODE"
+        	rows="10"
+        	cols="5"
+        	filter="raw"
+        />
+
+    </fieldset>
+
+    <fieldset
+        name="eopsob"
+        label="COM_JVRELATIVES_FIELDSET_EOPSOB"
+        description="COM_JVRELATIVES_FIELDSET_EOPSOB_DESC">
+
+        <field
+            name="eopsob_en"
+            type="radio"
+            default="1"
+            class="btn-group"
+            label="COM_JVRELATIVES_EOPSOB_EN"
+            description="COM_JVRELATIVES_EOPSOB_EN_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="eopsob_num_articles"
+            type="text"
+            default="1"
+            filter="integer"
+            class="inputbox"
+            label="COM_JVRELATIVES_EOPSOB_NUMART"
+            description=""
+        />
+
+        <field
+            name="eopsob_show_article_image"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_EOPSOB_SHOWARTIM"
+            description="COM_JVRELATIVES_EOPSOB_SHOWARTIM_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="eopsob_show_tags"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_EOPSOB_SHOW_TAGS"
+            description="COM_JVRELATIVES_EOPSOB_SHOW_TAGS">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="eopsob_show_smedia"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_EOPSOB_SHOW_SMEDIAB"
+            description="COM_JVRELATIVES_EOPSOB_SHOW_SMEDIAB">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+        <field
+            name="eopsob_box_width"
+            type="text"
+            default="25"
+            filter="integer"
+            class="inputbox"
+            label="COM_JVRELATIVES_EOPSOB_WIDTH"
+            description=""
+        />
+
+        <field
+            name="eopsob_only"
+            type="radio"
+            default="0"
+            class="btn-group"
+            label="COM_JVRELATIVES_EOPSOB_ONLY"
+            description="COM_JVRELATIVES_EOPSOB_ONLY_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+
+    </fieldset>
+</form>
